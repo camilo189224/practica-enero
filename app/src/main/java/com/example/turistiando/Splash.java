@@ -43,6 +43,6 @@ public class Splash extends AppCompatActivity {
         };
 
         Timer tiempo = new Timer();
-        tiempo.schedule(inicioapp,100000);
+        tiempo.schedule(inicioapp,10000);
     }
 }
