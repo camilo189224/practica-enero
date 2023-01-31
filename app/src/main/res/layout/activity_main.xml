@@ -53,7 +53,7 @@
         android:text="RESTAURANTE"
         android:textAlignment="center"
         android:textSize="40dp"
-        android:textColor="@color/seagreen"
+        android:textColor="#0639F3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.2"
