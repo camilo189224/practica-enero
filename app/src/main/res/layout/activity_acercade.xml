@@ -4,12 +4,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo4"
     tools:context=".Acercade">
 
     <ImageView
+        android:id="@+id/caricatura"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:src="@drawable/caricatura"
+        android:background="@color/aquamarine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19"
+        app:layout_constraintHorizontal_bias="0.5"
+        />
+
+    <TextView
+        android:id="@+id/nom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        
-        />
+        android:text="Camilo Marin"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caricatura"/>
+    <TextView
+        android:id="@+id/edad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30 años"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nom"/>
+    <TextView
+        android:id="@+id/ocup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estudiante"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edad"/>
+    <TextView
+        android:id="@+id/ubic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medellin ANT"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ocup"/>
 
 </android.support.constraint.ConstraintLayout>

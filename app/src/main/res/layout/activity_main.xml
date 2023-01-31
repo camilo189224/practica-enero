@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/fondo1">
+    android:background="@drawable/fondo3">
 
     <ImageButton
         android:id="@+id/iconohotel"
@@ -16,11 +16,25 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.2"
-        app:layout_constraintVertical_bias="0.50"
+        app:layout_constraintVertical_bias="0.76"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:padding="25dp"
          />
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:text="HOTEL"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:textColor="@color/olive"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintVertical_bias="0.75"
+        app:layout_constraintStart_toEndOf="@+id/iconohotel"
+        app:layout_constraintTop_toTopOf="parent"/>
+
     <ImageButton
         android:id="@+id/iconoRestaurante"
         android:layout_width="wrap_content"
@@ -28,10 +42,23 @@
         android:src="@drawable/restaurante"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
-        app:layout_constraintVertical_bias="0.65"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintVertical_bias="0.92"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:padding="25dp"/>
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:text="RESTAURANTE"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:textColor="@color/seagreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintVertical_bias="0.905"
+        app:layout_constraintStart_toEndOf="@+id/iconoRestaurante"
+        app:layout_constraintTop_toTopOf="parent"/>
 
 </android.support.constraint.ConstraintLayout>
