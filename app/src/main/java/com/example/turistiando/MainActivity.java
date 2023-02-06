@@ -10,6 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import java.util.Locale;
@@ -17,7 +19,8 @@ import java.util.Locale;
 public class MainActivity extends AppCompatActivity {
 
     //Atributos
-
+    ImageButton botonHoteles;
+    ImageButton botonRestaurante;
 
     //Metodos
     @Override
@@ -25,13 +28,33 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-    ActionBar barra = getSupportActionBar();
+        ActionBar barra = getSupportActionBar();
 
-    //cambiar el color del ActionBar
-    ColorDrawable colorBarra = new ColorDrawable(Color.parseColor("#FFF30606"));
-    barra.setBackgroundDrawable(colorBarra);
+        //cambiar el color del ActionBar
+        ColorDrawable colorBarra = new ColorDrawable(Color.parseColor("#FFF30606"));
+        barra.setBackgroundDrawable(colorBarra);
+
+
+        //asociando los botones a eventos de click (escuchar click)
+        botonHoteles = findViewById(R.id.iconohotel);
+
+        botonRestaurante = findViewById(R.id.iconoRestaurante);
+
+        botonHoteles.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentHoteles = new Intent(MainActivity.this,Hoteles.class);
+                startActivity(intentHoteles);
+            }
+        });
+        botonRestaurante.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentRestaurantes = new Intent(MainActivity.this,Restaurantes.class);
+                startActivity(intentRestaurantes);
+            }
+        });
     }
-
     //metodo para cambiar el idioma de mi app
     public void cambiarIdioma(String idioma){
 
@@ -48,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    //cargar el menu xml creado prviamente
+    //cargar el menu xml creado previamente
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu,menu);
         return  true;
